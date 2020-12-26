@@ -1,0 +1,16 @@
+<h1>Type Test</h1>
+
+<div id="parentPane">
+    <div id="paneOneTwo">
+        <app-pane-one></app-pane-one>
+        <app-pane-two [sampleTextLength]="textLengthParent" (isTimerChildOut)=timerFlipParent($event)></app-pane-two>
+    </div>
+    
+    <div id="paneThree">
+        <!--  [isTimer] is the target from pane3 ='isTimerParent'    -->
+        <app-pane-three 
+            [isTimer]='isTimerParent'
+            (textToParent)='textfromChild($event)'        
+        ></app-pane-three>
+    </div>
+</div>

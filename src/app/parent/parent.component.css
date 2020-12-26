@@ -1,0 +1,33 @@
+#parentPane {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 500px;
+  width: auto;
+}
+
+#paneOneTwo,
+#paneThree {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  justify-content: space-evenly;
+}
+
+#paneOneTwo {
+  flex-grow: 5;
+}
+
+#paneThree {
+  flex-grow: 2;
+}
+
+
+app-pane-one,
+app-pane-two {
+  border: 2px solid black;
+}
+
+app-pane-two {
+  flex-grow: 4;
+}
